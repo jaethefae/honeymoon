@@ -1,0 +1,115 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #f1a6e1;
+    margin: 0;
+    padding: 20px;
+}
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+}
+
+p {
+  font-family: 'Dancing Script', cursive;
+}
+.title {
+    text-align: center;
+    display: inline-block;
+  padding: 15px 30px;
+  border: 3px solid #ff69b4; /* Pink border */
+  background: linear-gradient(#e079a2, #f1a6e1); /* Soft pink fill */
+  color: #5e4b8b; /* Matches the purple background nicely */
+  border-radius: 12px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.section-title {
+    text-align: center;
+    color: #f53696;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}       
+ul.moments-list {
+    list-style-type: none;
+    padding: 0;
+}
+ul.moments-list li::before {
+    content: "🎀 ";
+    margin-right: 8px;
+}
+.divider {
+    border-top: 2px dashed #e64997;
+    margin: 40px auto;
+    width: 100%;
+}
+.card-container {
+    background-color: bisque;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+.photo {
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.card-container:hover {
+    transform: scale(1.02);
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    }
+.moments-list li {
+    animation: bounce 1.5s ease-in-out infinite;
+}
+.divider-with-heart {
+    position: relative;
+    margin: 30px 0;
+}
+.divider-with-heart hr {
+    border: none;
+    border-top: 2px dashed #e64997
+}
+.heart {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 20px;
+}
